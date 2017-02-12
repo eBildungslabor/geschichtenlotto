@@ -1,9 +1,22 @@
 function changeChar1() {
-	document.getElementById("character1").style.backgroundImage = "url('https://source.unsplash.com/UGQpaq08Igw/')";
-	document.getElementById("character1").style.backgroundImage = "url('https://source.unsplash.com/collection/530988/')";
-	console.log("attempted1");
+	document.getElementById('frame1').src = 'iframe1.html';
+}
+
+function changeChar2() {
+	document.getElementById('frame2').src = 'iframe4.html';
+}
+
+function changeSetting() {
+	document.getElementById('frame3').src = 'iframe2.html';
+}
+
+function changeObject() {
+	document.getElementById('frame4').src = 'iframe3.html';
 }
 
 document.body.onkeyup = function(x) {
 if (x.keyCode==49) {changeChar1();}
+if (x.keyCode==50) {changeChar2();}
+if (x.keyCode==51) {changeSetting();}
+if (x.keyCode==52) {changeObject();}
 }
