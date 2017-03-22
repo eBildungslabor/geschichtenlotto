@@ -14,9 +14,17 @@ function changeObject() {
 	document.getElementById('frame4').src = 'iframe3.html';
 }
 
+function toggle() {
+	var a = document.getElementById('help');
+	if (document.getElementById('help').style.display == 'none')
+	{document.getElementById('help').style.display = 'block'}
+	else {document.getElementById('help').style.display = 'none'};
+}
+
 document.body.onkeyup = function(x) {
 if (x.keyCode==49) {changeChar1();}
 if (x.keyCode==50) {changeChar2();}
 if (x.keyCode==51) {changeSetting();}
 if (x.keyCode==52) {changeObject();}
+if (x.keyCode==72) {toggle();}
 }
