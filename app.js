@@ -28,3 +28,8 @@ if (x.keyCode==51) {changeSetting();}
 if (x.keyCode==52) {changeObject();}
 if (x.keyCode==72) {toggle();}
 }
+
+document.getElementById('frame1').addEventListener("click", changeChar1());
+document.getElementById('frame2').addEventListener("click", changeChar2());
+document.getElementById('frame3').addEventListener("click", changeSetting());
+document.getElementById('frame4').addEventListener("click", changeObject());
