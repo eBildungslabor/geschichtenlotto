@@ -21,15 +21,9 @@ function toggle() {
 	else {document.getElementById('help').style.display = 'none'};
 }
 
-document.body.onkeyup = function(x) {
-if (x.keyCode==49) {changeChar1();}
-if (x.keyCode==50) {changeChar2();}
-if (x.keyCode==51) {changeSetting();}
-if (x.keyCode==52) {changeObject();}
-if (x.keyCode==72) {toggle();}
-}
+document.getElementById('text1').addEventListener("click", changeChar1);
+document.getElementById('text2').addEventListener("click", changeChar2);
+document.getElementById('text3').addEventListener("click", changeSetting);
+document.getElementById('text4').addEventListener("click", changeObject);
+document.getElementById('text5').addEventListener("click", toggle);
 
-document.getElementById('frame1').addEventListener("click", changeChar1());
-document.getElementById('frame2').addEventListener("click", changeChar2());
-document.getElementById('frame3').addEventListener("click", changeSetting());
-document.getElementById('frame4').addEventListener("click", changeObject());
